@@ -95,13 +95,11 @@ const char *chalk_options[] = {
 typedef struct garbage_collector {
     void *body[1024];
     size_t sz;
-} garbage_collector_t;
+} chalk_garbage_collector_t;
 
-garbage_collector_t gc = (garbage_collector_t) {
-    .sz = 0,
-};
+chalk_garbage_collector_t chalk_gc;
 
-void gc_collect(garbage_collector_t *gc) {
+void gc_collect(chalk_garbage_collector_t *gc) {
     for (size_t s = 0; s < gc->sz; s++) {
         free(gc->body[s]);
     }
@@ -112,13 +110,12 @@ void gc_collect(garbage_collector_t *gc) {
 const char *chalkf(const chalk_option_t chalk_option, const char *fmt, ...) {
     va_list args;
     char *ret = malloc(256);
-    gc.body[gc.sz ++] = ret;
+    chalk_gc.body[chalk_gc.sz ++] = ret;
     char buf[256];
     va_start(args, fmt);
-    vsprintf(buf, fmt, args);
+    vsnprintf(buf, 256, fmt, args);
     va_end(args);
-    sprintf(ret, "%s%s%s", chalk_options[chalk_option], buf, chalk_options[CHALK_POP]);
-    
+    snprintf(ret, 256, "%s%s%s", chalk_options[chalk_option], buf, chalk_options[CHALK_POP]);
     return ret;
 }
 
@@ -129,6 +126,6 @@ int main() {
     
     printf("%s", chalkf(CHALK_RED, "bye"));
 
-    gc_collect(&gc);
+    gc_collect(&chalk_gc);
     return 0;
 }
