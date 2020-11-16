@@ -97,11 +97,11 @@ typedef struct garbage_collector {
     size_t sz;
 } garbage_collector_t;
 
-static garbage_collector_t gc = (garbage_collector_t) {
+garbage_collector_t gc = (garbage_collector_t) {
     .sz = 0,
 };
 
-static void gc_collect(garbage_collector_t *gc) {
+void gc_collect(garbage_collector_t *gc) {
     for (size_t s = 0; s < gc->sz; s++) {
         free(gc->body[s]);
     }
