@@ -99,7 +99,7 @@ typedef struct garbage_collector {
 
 chalk_garbage_collector_t chalk_gc;
 
-void gc_collect(chalk_garbage_collector_t *gc) {
+void gc_clean(chalk_garbage_collector_t *gc) {
     for (size_t s = 0; s < gc->sz; s++) {
         free(gc->body[s]);
     }
@@ -126,6 +126,6 @@ int main() {
     
     printf("%s", chalkf(CHALK_RED, "bye"));
 
-    gc_collect(&chalk_gc);
+    gc_clean(&chalk_gc);
     return 0;
 }
