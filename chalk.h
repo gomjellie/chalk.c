@@ -1,3 +1,5 @@
+#ifndef _CHALK_H_
+#define _CHALK_H_
 
 #define CHALK_BLACK(FMT) "\x1b[30m"FMT"\x1b[0m"
 #define CHALK_RED(FMT) "\x1b[31m"FMT"\x1b[0m"
@@ -39,3 +41,5 @@
 #define CHALK_ITALIC(FMT) "\x1b[3m"FMT"\x1b[0m"
 #define CHALK_INVERSE(FMT) "\x1b[7m"FMT"\x1b[0m"
 #define CHALK_HIDDEN(FMT) "\x1b[8m"FMT"\x1b[0m"
+
+#endif /* _CHALK_H_ */

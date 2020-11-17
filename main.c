@@ -19,11 +19,15 @@ int main() {
     for (int i = 0; i < 11; i++)
         printf("%s", hello_chalk[i]);
 
+    puts("");
+    for (int i = 0; i < 11; i++) {
+        printf(CHALK_UNDERLINE(CHALK_INVERSE("%s")), hello_chalk[i]);
+    }
     printf("\n%s\n", CHALK_ITALIC(CHALK_BG_LIGHT_GREEN(CHALK_WHITE("hello?"))));
     puts(CHALK_UNDERLINE(CHALK_LIGHT_GREEN("hello")));
     printf(CHALK_CYAN("%d x %d = %d"), 2, 2, 4);
     
-    printf("%s\n", CHALK_RED("bye"));
+    printf("\n%s\n", CHALK_RED("bye"));
 
     return 0;
 }
