@@ -1,3 +1,3 @@
 
 all:
-	gcc main.c -o run --std=c11
+	gcc main.c -o chalk --std=c11

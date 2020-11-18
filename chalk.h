@@ -37,8 +37,11 @@
 
 #define CHALK_POP "\x1b[0m"
 #define CHALK_BOLD(FMT) "\x1b[1m"FMT"\x1b[0m"
-#define CHALK_UNDERLINE(FMT) "\x1b[4m"FMT"\x1b[0m"
+#define CHALK_FAINT(FMT) "\x1b[2m"FMT"\x1b[0m"
 #define CHALK_ITALIC(FMT) "\x1b[3m"FMT"\x1b[0m"
+#define CHALK_UNDERLINE(FMT) "\x1b[4m"FMT"\x1b[0m"
+#define CHALK_BLINK(FMT) "\x1b[5m"FMT"\x1b[0m"
+#define CHALK_STRIKE(FMT) "\x1b[9m"FMT"\x1b[0m"
 #define CHALK_INVERSE(FMT) "\x1b[7m"FMT"\x1b[0m"
 #define CHALK_HIDDEN(FMT) "\x1b[8m"FMT"\x1b[0m"
 
