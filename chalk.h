@@ -31,7 +31,7 @@
 #define CHALK_BG_LIGHT_GREEN(FMT) "\x1b[102m"FMT"\x1b[0m"
 #define CHALK_BG_LIGHT_YELLOW(FMT) "\x1b[103m"FMT"\x1b[0m"
 #define CHALK_BG_LIGHT_BLUE(FMT) "\x1b[104m"FMT"\x1b[0m"
-#define CHALK_BG_LIGHt_MAGENTA(FMT) "\x1b[105m"FMT"\x1b[0m"
+#define CHALK_BG_LIGHT_MAGENTA(FMT) "\x1b[105m"FMT"\x1b[0m"
 #define CHALK_BG_LIGHT_CYAN(FMT) "\x1b[106m"FMT"\x1b[0m"
 #define CHALK_BG_LIGHT_WHITE(FMT) "\x1b[107m"FMT"\x1b[0m"
 
