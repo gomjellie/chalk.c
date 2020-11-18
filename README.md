@@ -1,5 +1,7 @@
 # chalk.c
-colorful terminal print C library
+colorful terminal C Macro library
+
+![chalk.git](./.github/chalk.gif)
 
 ## ansi color table
 
