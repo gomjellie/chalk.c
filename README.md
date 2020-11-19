@@ -27,9 +27,7 @@ printf(CHALK_BLINK("깜빡깜빡"));
        ^ ~~ 깜빡이 효과를 씌웁니다.
 ```
 
-## 지원표
-
-## Features
+## MACRO Function
 
 |MACRO Function | 글자 색깔 |
 |---------------|-----|
@@ -64,7 +62,7 @@ printf(CHALK_BLINK("깜빡깜빡"));
 |CHALK_BG_CYAN   | 청록 |
 |CHALK_BG_WHITE  | 하양 |
 
-| 매크로 함수             | 배경 색깔 |
+| MACRO Function       | 배경 색깔 |
 |----------------------|---------|
 |CHALK_BG_LIGHT_BLACK  | 연한 검정 |
 |CHALK_BG_LIGHT_RED    | 연한 빨강 |
@@ -75,7 +73,7 @@ printf(CHALK_BLINK("깜빡깜빡"));
 |CHALK_BG_LIGHT_CYAN   | 연한 청록 |
 |CHALK_BG_LIGHT_WHITE  | 연한 하양 |
 
-| 매크로 함수      | 효과 |
+| MACRO Function| 효과 |
 |---------------|-----|
 |CHALK_BOLD     | 굵게 |
 |CHALK_DIM      | 연하게 |
