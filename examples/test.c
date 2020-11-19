@@ -30,5 +30,7 @@ int main() {
     printf(CHALK_UNDERLINE("%s %s"), CHALK_RED("你好"), CHALK_LIGHT_YELLOW("世界") "\n");
 
     printf(CHALK_BLINK("햇빛이 선명하게 나뭇잎을 핥고 있었다.") "\n");
+    printf(CHALK_ITALIC(CHALK_GREEN("초록색문자열") CHALK_BLUE("파란색문자열")));
+    
     return 0;
 }
