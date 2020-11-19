@@ -30,7 +30,8 @@ printf(CHALK_BLINK("깜빡깜빡"));
 
 ```c
 #define CHALK_NO_PREFIX
-        ^ ~~ CHALK_RED 대신에 RED만 써도 됩니다!
+        ^ ~~ 앞의 CHALK_ 를 쓰지 않아도 됩니다.
+        ^ ~~ 예를들면, CHALK_RED 대신에 RED만 써도 됩니다!
 #include "chalk.h"
 
 printf(BLINK(BLACK("블랙") " " LIGHT_RED("핑크")));
