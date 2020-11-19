@@ -29,5 +29,6 @@ int main() {
     
     printf("\n%s\n", CHALK_BLINK(CHALK_RED("bye")));
 
+    printf(CHALK_UNDERLINE("%s %s"), CHALK_RED("HI"), CHALK_YELLOW("THERE"));
     return 0;
 }
