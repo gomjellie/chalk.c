@@ -34,11 +34,25 @@ printf(CHALK_BLINK("깜빡깜빡"));
         ^ ~~ 예를들면, CHALK_RED 대신에 RED만 써도 됩니다!
 #include "chalk.h"
 
-printf(BLINK(BLACK("블랙") " " LIGHT_RED("핑크")));
+printf(BG_BLACK(MAGENTA("블랙")) " " BG_MAGENTA(BLACK("핑크")));
 
 printf(BOLD("굵은 글씨") " " DIM("연한 글씨") "\n");
 
-printf(ITALIC("기울인 글씨" BOLD("기울이면서 굵은 글씨")));
+printf(ITALIC("ITALIC " BOLD("ITALIC AND BOLD")));
+
+```
+
+```c
+/* template 만들기 */
+const char *int_template = MAGENTA("%d") "\n";
+printf(int_template, 15);
+  ~~> 선홍색 15 출력
+
+const char *n_times_m = BLUE("%d X %d") " = " BG_CYAN("%d");
+printf(n_times_m, 5, 6, 30);
+  ~~> 5 X 6 파란색 
+        ~~> = 
+          ~~> 30 청록 배경
 
 ```
 
