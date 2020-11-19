@@ -1,5 +1,5 @@
 # chalk.c
-colorful terminal C Macro library
+🌈 Colorful Console C MACRO library
 
 ![chalk.git](./.github/chalk.gif)
 
