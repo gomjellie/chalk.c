@@ -5,14 +5,21 @@
 
 ## 특징
 
-  - 높은 이식성
-    - 매크로함수만으로 구성되어서 [chalk.h](./chalk.h) 파일 하나만 복사해서 프로젝트에 넣으면 바로 사용할 수 있습니다.
-  - 가볍습니다.
-    - 런타임에 실행되는것이 아닌, 전처리되기 때문에 실행이 빠릅니다.
-  - 유연한 표현력
-    - C언어의 String Literal, `생각보다` 유연합니다.
-  - 코드 가독성
-    - 직접 ANSI ESCAPE를 쓰는것보다 가독성이 좋아집니다.
+높은 이식성
+
+    매크로함수만으로 구성되어서 [chalk.h](./chalk.h) 파일 하나만 복사해서 프로젝트에 넣으면 바로 사용할 수 있습니다.
+
+가볍습니다.
+
+    런타임에 실행되는것이 아닌, 전처리되기 때문에 실행이 빠릅니다.
+
+유연한 표현력
+
+    C언어의 String Literal, `생각보다` 유연합니다.
+
+코드 가독성
+
+     직접 ANSI ESCAPE를 쓰는것보다 가독성이 좋아집니다.
 
 ## Examples
 
@@ -156,15 +163,6 @@ CHALK_BG_RED(CHALK_BLUE("문자열"))
 
 앞서 설명한 속성1을 이용해서 CHALK_ITALIC(CHALK_GREEN("초록색문자열") CHALK_BLUE("파란색문자열")) 로 표현할 수 있습니다.
 
-## ansi color table
+## References
 
-https://github.com/shiena/ansicolor/blob/master/README.md
-
-https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters
-
-https://tforgione.fr/posts/ansi-escape-codes/
-
-## Reference
-
-[자바스크립트 chalk](https://github.com/chalk/chalk) 를 보고 C에서 쓸 수 있게 만들고 싶어서 구현했습니다.
-
+[자바스크립트 chalk](https://github.com/chalk/chalk) 의 네이밍을 따왔습니다.
