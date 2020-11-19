@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define CHALK_USE_SHORTEN_MACRO
+#define CHALK_NO_PREFIX
 #include "../chalk.h"
 
 int main() {
@@ -24,12 +24,13 @@ int main() {
     for (int i = 0; i < 11; i++) {
         printf(INVERSE("%s"), hello_chalk[i]);
     }
-    printf("\n" ITALIC(BG_LIGHT_GREEN(BLACK("hello?"))) "\n");
+    printf("\n" ITALIC(BG_LIGHT_GREEN(BLACK("햇빛이 선명하게 나뭇잎을 핥고 있었다."))) "\n");
     puts(UNDERLINE(LIGHT_GREEN("https://github.com/gomjellie/chalk.c")));
     printf(BOLD(CYAN("THIS IS BOLD, CYAN: %d x %d = %d")) "\n", 2, 2, 4);
     
     printf(UNDERLINE("%s %s"), RED("你好"), LIGHT_YELLOW("世界") "\n");
 
-    printf(BLINK("햇빛이 선명하게 나뭇잎을 핥고 있었다.") "\n");
+    printf(BLINK("ㄷㄷㄷㅈ") "\n");
+    printf(BLINK(MAGENTA("DUDUDUNGA")) "\n");
     return 0;
 }
