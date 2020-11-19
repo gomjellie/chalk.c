@@ -33,11 +33,11 @@ CHALK_색깔, CHALK_BG_색깔 ... 등은 매크로 함수입니다.
 
 여기서는 하나만 예를들어서 CHALK_RED 로 설명을 하겠습니다.
 
-CHALK_RED(STRING)는 \<RED> STRING \</RED> 으로 변경됩니다. 
+CHALK_RED(STRING)는 `<RED> STRING </RED>` 으로 변경됩니다. 
 
 정확히는 "\x1b[31m" STRING "\x1b[39m" 입니다. 
 
-하지만 \x1b 등의 표현은 굉장히 가독성이 좋지 않기 때문에 JSX의 Element를 표현하는 방식처럼 \<RED> \</RED> 따위의 표현을 빌려서 앞으로 대신 설명하겠습니다.
+하지만 \x1b 등의 표현은 굉장히 가독성이 좋지 않기 때문에 JSX의 Element를 표현하는 방식처럼 `<RED> </RED>` 따위의 표현을 빌려서 앞으로 대신 설명하겠습니다.
 
 
 
