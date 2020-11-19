@@ -101,6 +101,6 @@
 #define INVERSE CHALK_INVERSE
 #define HIDE CHALK_HIDE
 
-#endif /* CHALK_USE_SHORTEN_MACRO */
+#endif /* CHALK_NO_PREFIX */
 
 #endif /* _CHALK_H_ */
