@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "chalk.h"
+#include "../chalk.h"
 
 int main() {
     const char *hello_chalk[] = {
@@ -21,7 +21,7 @@ int main() {
 
     puts("");
     for (int i = 0; i < 11; i++) {
-        printf(CHALK_UNDERLINE(CHALK_INVERSE("%s")), hello_chalk[i]);
+        printf(CHALK_INVERSE("%s"), hello_chalk[i]);
     }
     printf("\n" CHALK_ITALIC(CHALK_BG_LIGHT_GREEN(CHALK_BLACK("hello?"))) "\n");
     puts(CHALK_UNDERLINE(CHALK_LIGHT_GREEN("https://github.com/gomjellie/chalk.c")));
