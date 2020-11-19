@@ -144,3 +144,7 @@ https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters
 
 https://tforgione.fr/posts/ansi-escape-codes/
 
+## Reference
+
+[자바스크립트 chalk](https://github.com/chalk/chalk) 를 보고 C에서 쓸 수 있게 만들고 싶어서 구현했습니다.
+
