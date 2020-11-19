@@ -11,7 +11,7 @@
 ## 예제
 
 ```c
-#include <chalk.h>
+#include "chalk.h"
 
 printf(CHALK_RED("Hello World"));
        ^ ~ "Hello World" 문자열의 글자를 빨간색으로 바꿔줍니다.
@@ -25,9 +25,23 @@ printf(CHALK_BG_BLUE(CHALK_RED("혼합 사용")));
 
 printf(CHALK_BLINK("깜빡깜빡"));
        ^ ~~ 깜빡이 효과를 씌웁니다.
+
 ```
 
-## MACRO Function
+```c
+#define CHALK_NO_PREFIX
+        ^ ~~ CHALK_RED 대신에 RED만 써도 됩니다!
+#include "chalk.h"
+
+printf(BLINK(BLACK("블랙") " " LIGHT_RED("핑크")));
+
+printf(BOLD("굵은 글씨") " " DIM("연한 글씨") "\n");
+
+printf(ITALIC("기울인 글씨" BOLD("기울이면서 굵은 글씨")));
+
+```
+
+## MACRO Functions
 
 |MACRO Function | 글자 색깔 |
 |---------------|-----|
@@ -96,7 +110,7 @@ CHALK_RED 로 예를 들어서 설명을 하겠습니다.
 
 CHALK_RED(문자열)는 `<RED> 문자열 </RED>` 으로 변경됩니다. 
 
-정확히는 "\x1b[31m" 문자열 "\x1b[39m" 입니다. 
+정확히는 "\x1b[31m" 문자열 "\x1b[39m" 입니다. [ANSI ESCAPE CODE](https://en.wikipedia.org/wiki/ANSI_escape_code)를 이용했습니다.
 
 여기서 \x1b 등의 표현은 굉장히 가독성이 좋지 않기 때문에 JSX의 Element를 표현하는 방식처럼 `<RED> </RED>` 따위의 표현을 빌려서 앞으로 대신 설명하겠습니다.
 

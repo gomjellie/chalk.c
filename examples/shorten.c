@@ -32,5 +32,6 @@ int main() {
 
     printf(BLINK("ㄷㄷㄷㅈ") "\n");
     printf(BLINK(MAGENTA("DUDUDUNGA")) "\n");
+    printf(ITALIC("기울인" BOLD("굵은 글씨")));
     return 0;
 }
