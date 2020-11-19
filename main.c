@@ -23,12 +23,12 @@ int main() {
     for (int i = 0; i < 11; i++) {
         printf(CHALK_UNDERLINE(CHALK_INVERSE("%s")), hello_chalk[i]);
     }
-    printf("\n%s\n", CHALK_ITALIC(CHALK_BG_LIGHT_GREEN(CHALK_BLACK("hello?"))));
+    printf("\n" CHALK_ITALIC(CHALK_BG_LIGHT_GREEN(CHALK_BLACK("hello?"))) "\n");
     puts(CHALK_UNDERLINE(CHALK_LIGHT_GREEN("https://github.com/gomjellie/chalk.c")));
-    printf(CHALK_BOLD(CHALK_CYAN("THIS IS BOLD, CYAN: %d x %d = %d")), 2, 2, 4);
+    printf(CHALK_BOLD(CHALK_CYAN("THIS IS BOLD, CYAN: %d x %d = %d")) "\n", 2, 2, 4);
     
-    printf("\n%s\n", CHALK_BLINK(CHALK_RED("bye")));
+    printf(CHALK_UNDERLINE("%s %s"), CHALK_RED("你好"), CHALK_LIGHT_YELLOW("世界") "\n");
 
-    printf(CHALK_UNDERLINE("%s %s"), CHALK_RED("HI"), CHALK_YELLOW("THERE"));
+    printf(CHALK_BLINK("햇빛이 선명하게 나뭇잎을 핥고 있었다.") "\n");
     return 0;
 }
