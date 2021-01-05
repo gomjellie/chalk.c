@@ -1,7 +1,7 @@
 # chalk.c
 🌈 Colorful Console C MACRO library
 
-![chalk.git](./.github/chalk.gif)
+![chalk.git](./.github/chalk.png)
 
 ## 특징
 
