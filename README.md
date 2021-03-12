@@ -15,7 +15,7 @@ Fast Performance
 
 Flexible Expressions
 
-  - String Literal in C lets you write flexible expressions
+  - String Literal in C lets you write flexible expressions with CHALK
 
 ## Examples
 
@@ -67,6 +67,8 @@ printf(n_times_m, 5, 6, 30);
 
 ## MACRO Functions
 
+## color
+
 |MACRO Function |
 |---------------|
 |CHALK_BLACK    |
@@ -89,6 +91,8 @@ printf(n_times_m, 5, 6, 30);
 |CHALK_LIGHT_CYAN   |
 |CHALK_LIGHT_WHITE  |
 
+## Background color
+
 |MACRO Function  |
 |----------------|
 |CHALK_BG_BLACK  |
@@ -110,6 +114,8 @@ printf(n_times_m, 5, 6, 30);
 |CHALK_BG_LIGHT_MAGENTA|
 |CHALK_BG_LIGHT_CYAN   |
 |CHALK_BG_LIGHT_WHITE  |
+
+## miscellaneous
 
 | MACRO Function|
 |---------------|
