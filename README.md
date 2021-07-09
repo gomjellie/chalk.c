@@ -11,7 +11,7 @@ Easy Install
 
 Fast Performance
 
-  - Code doesn't executed in runtime, it will be preprocessed
+  - No runtime Execution, it will be preprocessed
 
 Flexible Expressions
 
